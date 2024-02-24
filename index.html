@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- font awesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    
+
+   <body>
+    <main id="main">
+        <img id="header-img" src="ferks-guare-KEZdWfYD-ow-unsplash.jpg" alt="cover image of burger">
+        <div class="fast-food-header-text">
+            <h2>Sara's Diner</h2>
+            <h3>The best burgers and pizzas in town.</h3>
+        </div>
+    
+    
+       <div class="menu-list" id="menu-list"></div>
+       
+       <div class="order-list" id="order-list">
+           <h1 id="order-title"></h1>
+       </div>
+       <div class="total-price" id="total-price"></div>
+       <div class="complete-order" id="complete-order"></div>
+       
+    </main>
+    <div class="payment-part" id="payment-part">
+        <div id="close-btn">X</div>
+        <div class="inner-payment-part">
+            <h1>Enter card details</h1>
+            <form class="payment-form" id="payment-form">
+                <input type="text"
+                       placeholder="Enter your name"
+                       id="name"
+                       name="name"
+                       minlength="2" 
+                       pattern="[A-Za-z\s]+"    
+                       required
+                
+                >
+                <input type="text"
+                       placeholder="Enter card number"
+                       id="card"
+                       name="card"
+                       pattern="\d{16}" 
+                       required
+                >
+                <input type="text"
+                       placeholder="Enter CVV"
+                       id="cvv"
+                       name="cvv"
+                       maxlength="3"
+                       pattern="\d{3}"
+                       required
+                       
+                >
+                <button id="final-payment">Pay</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+
+ </body>
+</html>
+
+
+
